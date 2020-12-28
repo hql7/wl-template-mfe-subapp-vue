@@ -5,7 +5,7 @@ import store from "@/store";
 /**
  * @name 注册插件
  */
-import '@/plugins/install.js'
+// import '@/plugins'
 
 /**
  * @name 注册library

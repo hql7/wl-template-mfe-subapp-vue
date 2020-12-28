@@ -26,16 +26,16 @@ export default {
     // 是否显示
     show: {
       type: Boolean,
-      default: false
+      default: false,
     },
     // 是否使用scroll组件
     useScroll: {
       type: Boolean,
-      default: true
+      default: true,
     },
     // 自定义main的class
-    ftBodyClass: [String, Function]
-  }
+    ftBodyClass: [String, Function],
+  },
 };
 </script>
 
@@ -46,9 +46,9 @@ export default {
   flex-grow: 1;
   flex-shrink: 1;
   position: fixed;
-  top: $header_height + $main_body_padding;
-  bottom: $main_body_padding;
-  right: $main_body_padding;
+  top: $header-height + $main-body-padding;
+  bottom: $main-body-padding;
+  right: $main-body-padding;
   z-index: 9;
   width: 460px;
   background: #fff;
