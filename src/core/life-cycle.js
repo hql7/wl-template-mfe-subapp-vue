@@ -67,7 +67,7 @@ const lifeCycle = () => {
  * @description {Array} routes 主应用请求获取注册表后，从服务端拿到路由数据
  * @description {String} 子应用路由前缀 主应用请求获取注册表后，从服务端拿到路由数据
  */
-const render = ({ routes, routerBase, container } = {}) => {
+const render = ({ routes, routerBase, container, emits }) => {
   Vue.config.productionTip = false;
   router = new VueRouter({
     base: __qiankun__ ? routerBase : "/",
@@ -79,6 +79,8 @@ const render = ({ routes, routerBase, container } = {}) => {
     store,
     render: h => h(App)
   }).$mount(container ? container.querySelector("#app") : "#app");
+  // 异步路由加载错误处理
+  emits.asynRouterRetry(router);
 };
 
 export { lifeCycle, render };
