@@ -1,5 +1,4 @@
 
-import FtBpmn from "./ft-bpmn/index";
 import FtContainer from "./ft-container/";
 import FtContextmenu from "./ft-contextmenu/";
 import FtTable from "./ft-table/";
@@ -10,7 +9,7 @@ import FtTableReport from "./ft-table-report/";
 import FtInput from "./ft-input/";
 import FtVatable from "./ft-vatable/";
 
-const components = [FtContainer, FtBpmn, FtContextmenu, FtTable, FtScroll, FtAdd, FtFadein, FtTableReport, FtInput, FtVatable];
+const components = [FtContainer, FtContextmenu, FtTable, FtScroll, FtAdd, FtFadein, FtTableReport, FtInput, FtVatable];
 
 
 const install = function (Vue) {
